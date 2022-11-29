@@ -5,6 +5,33 @@ import random
 import time
 
 
+army_list = [
+    "Empire",
+    "Tomb Kings",
+    "Chaos",
+    "Orcs",
+    "High Elves",
+    "Dwarfs",
+    "Skaven",
+    "Lizardmen",
+    "Bretonnia",
+    "Kislev",
+    "Dark Elves",
+    "Daemons",
+    "Araby",
+    "Vampire Counts",
+    "Dogs of War",
+    "Ogre Kingdoms",
+    "Albion",
+    "Goblins",
+    "Witch Hunters",
+    "Chaos Dwarves",
+    "Wood Elves",
+    "Beastmen",
+    "Norse"
+]
+
+
 p1 = input("Please enter Player1 Army: \n").upper()
 p2 = input("Please enter Player1 Army: \n").upper()
 print(f"{p1} vs {p2}.")
@@ -13,9 +40,9 @@ time.sleep(2)
 
 def determine_scenario():
     scenarios = [
-        "TAKE AND HOLD", 
-        "BATTLE FOR THE TOWER", 
-        "DEFENDING THE VILLAGE", 
+        "TAKE AND HOLD",
+        "BATTLE FOR THE TOWER",
+        "DEFENDING THE VILLAGE",
         "VAGON TRAIN"
     ]
     scenario_choice = random.choice(scenarios)
@@ -43,4 +70,4 @@ print(f"The battle between {p1} and {p2} will be: {scenario}. \n")
 time.sleep(2)
 print(f"The battle will end after {number_of_turns} turns. \n")
 time.sleep(2)
-print(f"Player 1 is the {player_role} and Player 2 is the {player_role}. \n")
+print(f"{p1} Army is the {player_role}. {p2} Army is the {player_role}. \n")
