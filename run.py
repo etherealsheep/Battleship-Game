@@ -18,9 +18,9 @@ objects = {
             'Orc Horde'
         ],
         'daytime': [
-            'dawn'
+            'dawn',
             'day',
-            'sunset'
+            'sunset',
             'night'
         ],
         'weather': [
@@ -57,7 +57,7 @@ objects = {
             'river'
         ],
         'sceneryFive': [
-            'fortified wall'
+            'fortified wall',
             'castle'
         ],
         'winner': [
@@ -114,7 +114,7 @@ def selectObject(key):
     # traverse the array with index "i"
     for i in range(len(items)):
         # print the index and the value in the menu
-        print("{} - {}".format(i + 1, items[i]))
+        print("\n{} - {}".format(i + 1, items[i]))
     # initialize selection in -1 (no selection)
     selection = -1
     # set validInput initial value to False
@@ -127,7 +127,7 @@ def selectObject(key):
     while not validInput:
         # ask the user to enter a number asociated to a value in the menu
         # listed above.
-        input_value = input("Select a '{}' form the list above: [1..{}]\n"
+        input_value = input("\nSelect a '{}' form the list above: [1..{}]\n"
                             .format(key, len(items)))
         # enclose in a try-except the intructions that could thrown
         # an exception to validate the user input
@@ -146,13 +146,13 @@ def selectObject(key):
 def main():
     banner()
     while True:
-        print("Choose from four tournament scenarios: \n")
-        print("1. Take and Hold")
-        print("2. Battle for the Tower")
-        print("3. Defending the Village")
-        print("4. Wagon Train \n")
+        print("\n\n\n Choose from four tournament scenarios: \n")
+        print("1. Take and Hold\n")
+        print("2. Battle for the Tower\n")
+        print("3. Defending the Village\n")
+        print("4. Wagon Train\n")
         print("5. Exit \n")
-        print("Make your choice: (1, 2, 3,4)\n")
+        print("Make your choice: (1, 2, 3, 4):")
         choice = input()
         # Calls a story function based on choices
         if choice == "1":
@@ -206,7 +206,7 @@ def take_and_hold():
     sceneryFive = selectObject('sceneryFive')
     winner = selectObject('winner')
     loser =  selectObject('loser')
-    print("*** TAKE AND HOLD (Scenario Tournament - 2000 Army Points)")
+    print("\n\n*** TAKE AND HOLD (Scenario Tournament - 2000 Army Points)")
     print("The aim of this scenario is to fight over some objectives rather")
     print("than just breaking your opponent.")
     print("The attacker is {attacker}.")
@@ -234,7 +234,7 @@ def take_and_hold():
 
 
 def battle_for_the_tower():
-    print("*** BATTLE FOR THE TOWER (Scenario Tournament - 2000 Army Points)")
+    print("\n\n*** BATTLE FOR THE TOWER (Scenario Tournament - 2000 Army Points)")
     print("This scenario featurea a bloody struggle for a tower positioned")
     print("in the middle of the battlefield.")
     print("The attacker is {attacker}.")
@@ -262,7 +262,7 @@ def battle_for_the_tower():
 
 
 def defending_the_village():
-    print("*** DEFENDING THE VILLAGE (Scenario Tournament - 2000 Army Points)")
+    print("\n\n*** DEFENDING THE VILLAGE (Scenario Tournament - 2000 Army Points)")
     print("{defender} is defending a village and farmsteads against")
     print("{attacker} raiding the region. {attacker} aim is to ")
     print("burn down as many of the buildings as possible.")
@@ -290,7 +290,7 @@ def defending_the_village():
 
 
 def wagon_train():
-    print("*** WAGON TRAIN (Scenario Tournament - 2000 Army Points)")
+    print("\n\n*** WAGON TRAIN (Scenario Tournament - 2000 Army Points)")
     print("A supply wagon train escorted by a patrol force is ambushed")
     print("by {attacker}. {defender} task is to protect and get")
     print("to safety as many as wagons are possible.")
