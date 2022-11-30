@@ -129,7 +129,7 @@ def selectObject(key):
         # listed above.
         input_value = input("\nSelect a '{}' form the list above: [1..{}]\n"
                             .format(key, len(items)))
-        print("-------------------------------\n")
+        print("o()xxxxx[{::::::::::::::::::::::::::::::::::::> \n")
         # enclose in a try-except the intructions that could thrown
         # an exception to validate the user input
         # if entered value is not integer the ValueError exception is thrown
@@ -147,7 +147,8 @@ def selectObject(key):
 def main():
     banner()
     while True:
-        print("\n\n\n Choose from four tournament scenarios: \n")
+        print("\n\n\no()xxxxx[{::::::::::::::::::::::::::::::::::::> \n")
+        print("Choose from four tournament scenarios: \n")
         print("1. Take and Hold\n")
         print("2. Battle for the Tower\n")
         print("3. Defending the Village\n")
@@ -155,7 +156,7 @@ def main():
         print("5. Exit \n")
         print("Make your choice: (1, 2, 3, 4):")
         choice = input()
-        print("-------------------------------\n")
+        print("o()xxxx[{::::::::::::::::::::::::::::::::::> \n")
         # Calls a story function based on choices
         if choice == "1":
             take_and_hold()
