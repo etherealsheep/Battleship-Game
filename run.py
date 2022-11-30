@@ -197,3 +197,33 @@ def battle_for_the_tower():
     print(" ")
     print("WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
+
+
+def defending_the_village():
+    print("*** DEFENDING THE VILLAGE (Scenario Tournament - 2000 Army Points)")
+    print("{defender} is defending a village and farmsteads against")
+    print("{attacker} raiding the region. {attacker} aim is to ")
+    print("burn down as many of the buildings as possible.")
+    print("The attacker is {attacker}.")
+    print("The defender is {defender}.")
+    print(" ")
+    print("* Special Rules")
+    print("- Detail about scenario deployment detail are in the Rulebook.")
+    print("- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour},")
+    print("  place a village in {defender} corner.")
+    print("- After the terrains are placed, {defender} starts deploying")
+    print("  within {defender} deployment zone.")
+    print("- This game has a number of turns equal to {turns}.")
+    print("- {defender} will start the first turn.")
+    print("- Daytime and Weather condition are: {daytime} and {weather}.")
+    print(" ")
+    print("* Victory Points (VP)")
+    print("- 2 VP for braking the enemy")
+    print("- 2 VP for {attacker} for every burnt building.")
+    print("- 1 VP for {defender} for every burnt building.")
+    print("- 3 VP for {attacker} for burning the village.")
+    print(" ")
+    print("WIN: {winner}      LOSE: {loser}")
+    time.sleep(10)
+
+
