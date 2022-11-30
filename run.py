@@ -141,3 +141,31 @@ def selectObject(key):
         except (ValueError, IndexError):
             validInput = False
     return item
+
+
+def take_and_hold():
+    print("*** TAKE AND HOLD (Scenario Tournament - 2000 Army Points)")
+    print("The aim of this scenario is to fight over some objectives rather")
+    print("than just breaking your opponent.")
+    print("The attacker is {attacker}.")
+    print("The defender is {defender}.")
+    print(" ")
+    print("* Special Rules")
+    print("- Set up terrain and objectives: refer the drawing on the Ruleset.")
+    print("- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour}")
+    print("  and {sceneryFive} are set on the battlefield, players take turns")
+    print("  starting from {attacker}, in placing four game objectives.")
+    print("- After the objective are placed, {defender} starts deploying")
+    print("  within {defender} deployment zone.")
+    print("- This game has a number of turns equal to {turns}.")
+    print("  {attacker} will start the first turn.")
+    print("- Daytime and Weather condition are: {daytime} and {weather}.")
+    print(" ")
+    print("* Victory Points (VP)")
+    print("- 2 VP for breaking the enemy")
+    print("- 1 VP for holding objective in your deployment zone")
+    print("- 2 VP for holding objective in central deployment zone")
+    print("- 3 VP for holding objective in the opponent deployment zone")
+    print(" ")
+    print("WIN: {winner}      LOSE: {loser}")
+    time.sleep(10)
