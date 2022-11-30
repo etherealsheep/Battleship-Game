@@ -1,42 +1,112 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-import random
 import time
+import random
+
+objects = {
+        'attacker': [
+            'The Empire',
+            'High Elf Army',
+            'Dwarf Army',
+            'Undead Horde',
+            'Chaos Army',
+            'Orc Horde'
+        ],
+        'defender': [
+            'The Empire',
+            'High Elf Army',
+            'Dwarf Army',
+            'Undead Horde',
+            'Chaos Army',
+            'Orc Horde'
+        ],
+        'daytime': [
+            'dawn'
+            'day',
+            'sunset'
+            'night'
+        ],
+        'weather': [
+            'clear',
+            'fog',
+            'wind',
+            'rain',
+            'storm'
+        ],
+        'turns': [
+            '6',
+            '7',
+            '8'
+        ],
+        'sceneryOne': [
+            'hill',
+            'wood',
+            'river'
+        ],
+        'sceneryTwo': [
+            'hill',
+            'wood',
+            'river'
+        ],
+        'sceneryThree': [
+            'road',
+            'building',
+        ],
+        'sceneryFour': [
+            'road',
+            'building',
+            'hill',
+            'wood',
+            'river'
+        ],
+        'sceneryFive': [
+            'fortified wall'
+            'castle'
+        ],
+        'winner': [
+            'The Empire',
+            'High Elf Army',
+            'Dwarf Army',
+            'Undead Horde',
+            'Chaos Army',
+            'Orc Horde'
+        ],
+        'loser': [
+            'The Empire',
+            'High Elf Army',
+            'Dwarf Army',
+            'Undead Horde',
+            'Chaos Army',
+            'Orc Horde'
+        ],
+}
 
 
-army_list = [
-    "Empire",
-    "Undead",
-    "Chaos",
-    "Orcs",
-    "High Elves",
-    "Dwarfs",
-]
-
-
-def title():
-    print("══════════════════════════════════════════════════════════════════════════════") # noqa
-    print(" ")
-    print("██╗    ██╗ █████╗ ██████╗ ███╗   ███╗ █████╗ ███████╗████████╗███████╗██████╗ ") # noqa
-    print("██║    ██║██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗") # noqa
-    print("██║ █╗ ██║███████║██████╔╝██╔████╔██║███████║███████╗   ██║   █████╗  ██████╔╝") # noqa
-    print("██║███╗██║██╔══██║██╔══██╗██║╚██╔╝██║██╔══██║╚════██║   ██║   ██╔══╝  ██╔══██╗") # noqa
-    print("╚███╔███╔╝██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║███████║   ██║   ███████╗██║  ██║") # noqa
-    print(" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝") # noqa
-    print("██████╗  █████╗ ████████╗████████╗██╗     ███████╗██╗      ██████╗  ██████╗   ") # noqa
-    print("██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██║     ██╔═══██╗██╔════╝   ") # noqa
-    print("██████╔╝███████║   ██║      ██║   ██║     █████╗  ██║     ██║   ██║██║  ███╗  ") # noqa
-    print("██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ██║     ██║   ██║██║   ██║  ") # noqa
-    print("██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████╗╚██████╔╝╚██████╔╝  ") # noqa
-    print("╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝ ╚═════╝  ╚═════╝   ") # noqa
-    print(" ")
-    print("══════════════════════════════════════════════════════════════════════════════") # noqa
-    print(" ")
-    time.sleep(2)
-
-
-title()
+def banner():
+    # Initial Banner.
+    print("            ██╗    ██╗ █████╗ ██████╗")
+    print("            ██║    ██║██╔══██╗██╔══██╗")
+    print("            ██║ █╗ ██║███████║██████╔╝")
+    print("            ██║███╗██║██╔══██║██╔══██╗")
+    print("            ╚███╔███╔╝██║  ██║██║  ██║")
+    print("             ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝")
+    print("███╗   ███╗ █████╗ ███████╗████████╗███████╗██████╗")
+    print("████╗ ████║██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔══██╗")
+    print("██╔████╔██║███████║███████╗   ██║   █████╗  ██████╔╝")
+    print("██║╚██╔╝██║██╔══██║╚════██║   ██║   ██╔══╝  ██╔══██╗")
+    print("██║ ╚═╝ ██║██║  ██║███████║   ██║   ███████╗██║  ██║")
+    print("╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝")
+    print("██████╗  █████╗ ████████╗████████╗██╗     ███████╗")
+    print("██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝")
+    print("██████╔╝███████║   ██║      ██║   ██║     █████╗")
+    print("██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝")
+    print("██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗")
+    print("╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝")
+    print("            ██╗      ██████╗  ██████╗")
+    print("            ██║     ██╔═══██╗██╔════╝")
+    print("            ██║     ██║   ██║██║  ███╗")
+    print("            ██║     ██║   ██║██║   ██║")
+    print("            ███████╗╚██████╔╝╚██████╔╝")
+    print("            ╚══════╝ ╚═════╝  ╚═════╝")
+    time.sleep(3)
 
 
 p1 = input("Please enter Player1 Army: \n").upper()
