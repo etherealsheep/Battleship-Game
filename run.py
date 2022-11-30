@@ -143,7 +143,69 @@ def selectObject(key):
     return item
 
 
+def main():
+    banner()
+    while True:
+        print("Choose from four tournament scenarios: \n")
+        print("1. Take and Hold")
+        print("2. Battle for the Tower")
+        print("3. Defending the Village")
+        print("4. Wagon Train \n")
+        print("5. Exit \n")
+        print("Make your choice: (1, 2, 3,4)\n")
+        choice = input()
+        # Calls a story function based on choices
+        if choice == "1":
+            take_and_hold()
+        elif choice == "2":
+            battle_for_the_tower()
+        elif choice == "3":
+            defending_the_village()
+        elif choice == "4":
+            wagon_train()
+        elif choice == "5":
+            # Breaks the loop to exit game on entering 5
+            print("\n\n See you Commander.")
+            print("\n press : Press the button RUN PROGRAM to run again.")
+            print(" ")
+            print("████████╗ ██████╗     ████████╗██╗  ██╗███████╗")
+            print("╚══██╔══╝██╔═══██╗    ╚══██╔══╝██║  ██║██╔════╝")
+            print("   ██║   ██║   ██║       ██║   ███████║█████╗")
+            print("   ██║   ██║   ██║       ██║   ██╔══██║██╔══╝")
+            print("   ██║   ╚██████╔╝       ██║   ██║  ██║███████╗")
+            print("   ╚═╝    ╚═════╝        ╚═╝   ╚═╝  ╚═╝╚══════╝")
+            print("███╗   ██╗███████╗██╗  ██╗████████╗")
+            print("████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝")
+            print("██╔██╗ ██║█████╗   ╚███╔╝    ██║")
+            print("██║╚██╗██║██╔══╝   ██╔██╗    ██║")
+            print("██║ ╚████║███████╗██╔╝ ██╗   ██║")
+            print("╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝")
+            print("██████╗  █████╗ ████████╗████████╗██╗     ███████╗")
+            print("██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝")
+            print("██████╔╝███████║   ██║      ██║   ██║     █████╗")
+            print("██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝")
+            print("██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗██╗██╗")
+            print("╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚═╝╚═╝")
+            time.sleep(2)
+            break
+        else:
+            print("Please enter a valid option! \n\n")
+            time.sleep(1)
+
+
 def take_and_hold():
+    attacker = selectObject('attacker')
+    defender = selectObject('defender')
+    daytime = selectObject('daytime')
+    weather = selectObject('weather')
+    turns = selectObject('turns')
+    sceneryOne = selectObject('sceneryOne')
+    sceneryTwo = selectObject('sceneryTwo')
+    sceneryThree = selectObject('sceneryThree')
+    sceneryFour = selectObject('sceneryFour')
+    sceneryFive = selectObject('sceneryFive')
+    winner = selectObject('winner')
+    loser =  selectObject('loser')
     print("*** TAKE AND HOLD (Scenario Tournament - 2000 Army Points)")
     print("The aim of this scenario is to fight over some objectives rather")
     print("than just breaking your opponent.")
@@ -253,3 +315,6 @@ def wagon_train():
     print(" ")
     print("WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
+
+
+main()
