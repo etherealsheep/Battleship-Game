@@ -35,28 +35,28 @@ objects = {
             '7',
             '8'
         ],
-        'sceneryOne': [
+        'sc_one': [
             'hill',
             'wood',
             'river'
         ],
-        'sceneryTwo': [
+        'sc_two': [
             'hill',
             'wood',
             'river'
         ],
-        'sceneryThree': [
+        'sc_three': [
             'road',
             'building',
         ],
-        'sceneryFour': [
+        'sc_four': [
             'road',
             'building',
             'hill',
             'wood',
             'river'
         ],
-        'sceneryFive': [
+        'sc_five': [
             'fortified wall',
             'castle'
         ],
@@ -108,7 +108,7 @@ def banner():
     time.sleep(3)
 
 
-def selectObject(key):
+def select_obj(key):
     # get the array of items. e.g: attacker, defender, daytime, etc...
     items = objects[key]
     # traverse the array with index "i"
@@ -197,18 +197,18 @@ def main():
 
 
 def take_and_hold():
-    attacker = selectObject('attacker')
-    defender = selectObject('defender')
-    daytime = selectObject('daytime')
-    weather = selectObject('weather')
-    turns = selectObject('turns')
-    sceneryOne = selectObject('sceneryOne')
-    sceneryTwo = selectObject('sceneryTwo')
-    sceneryThree = selectObject('sceneryThree')
-    sceneryFour = selectObject('sceneryFour')
-    sceneryFive = selectObject('sceneryFive')
-    winner = selectObject('winner')
-    loser = selectObject('loser')
+    attacker = select_obj('attacker')
+    defender = select_obj('defender')
+    daytime = select_obj('daytime')
+    weather = select_obj('weather')
+    turns = select_obj('turns')
+    sc_one = select_obj('sc_one')
+    sc_two = select_obj('sc_two')
+    sc_three = select_obj('sc_three')
+    sc_four = select_obj('sc_four')
+    sc_five = select_obj('sc_five')
+    winner = select_obj('winner')
+    loser = select_obj('loser')
     print("\n\n*** TAKE AND HOLD")
     print("The aim of this scenario is to fight over some objectives rather")
     print("than just breaking your opponent.")
@@ -217,8 +217,8 @@ def take_and_hold():
     print(" ")
     print("* Special Rules")
     print("- Set up terrain and objectives: refer the drawing on the Ruleset.")
-    print(f"- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour}")
-    print(f"  and {sceneryFive} are set on the battlefield, players take turn")
+    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
+    print(f"  and {sc_five} are set on the battlefield, players take turn")
     print(f"  starting from {attacker}, in placing four game objectives.")
     print(f"- After the objective are placed, {defender} starts deploying")
     print(f"  within {defender} deployment zone.")
@@ -237,18 +237,18 @@ def take_and_hold():
 
 
 def battle_for_the_tower():
-    attacker = selectObject('attacker')
-    defender = selectObject('defender')
-    daytime = selectObject('daytime')
-    weather = selectObject('weather')
-    turns = selectObject('turns')
-    sceneryOne = selectObject('sceneryOne')
-    sceneryTwo = selectObject('sceneryTwo')
-    sceneryThree = selectObject('sceneryThree')
-    sceneryFour = selectObject('sceneryFour')
-    sceneryFive = selectObject('sceneryFive')
-    winner = selectObject('winner')
-    loser = selectObject('loser')
+    attacker = select_obj('attacker')
+    defender = select_obj('defender')
+    daytime = select_obj('daytime')
+    weather = select_obj('weather')
+    turns = select_obj('turns')
+    sc_one = select_obj('sc_one')
+    sc_two = select_obj('sc_two')
+    sc_three = select_obj('sc_three')
+    sc_four = select_obj('sc_four')
+    sc_five = select_obj('sc_five')
+    winner = select_obj('winner')
+    loser = select_obj('loser')
     print("\n\n*** BATTLE FOR THE TOWER")
     print("This scenario featurea a bloody struggle for a tower positioned")
     print("in the middle of the battlefield.")
@@ -257,8 +257,8 @@ def battle_for_the_tower():
     print(" ")
     print("* Special Rules")
     print("- Set up terrain and objectives: refer the drawing on the Ruleset.")
-    print(f"- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour}")
-    print(f"  {sceneryFive}, place a tower right in the middle of the table.")
+    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
+    print(f"  {sc_five}, place a tower right in the middle of the table.")
     print(f"- After the terrains are placed, {defender} starts deploying")
     print(f"  within {defender} deployment zone.")
     print(f"- This game has a number of turns equal to {turns}.")
@@ -277,17 +277,17 @@ def battle_for_the_tower():
 
 
 def defending_the_village():
-    attacker = selectObject('attacker')
-    defender = selectObject('defender')
-    daytime = selectObject('daytime')
-    weather = selectObject('weather')
-    turns = selectObject('turns')
-    sceneryOne = selectObject('sceneryOne')
-    sceneryTwo = selectObject('sceneryTwo')
-    sceneryThree = selectObject('sceneryThree')
-    sceneryFour = selectObject('sceneryFour')
-    winner = selectObject('winner')
-    loser = selectObject('loser')
+    attacker = select_obj('attacker')
+    defender = select_obj('defender')
+    daytime = select_obj('daytime')
+    weather = select_obj('weather')
+    turns = select_obj('turns')
+    sc_one = select_obj('sc_one')
+    sc_two = select_obj('sc_two')
+    sc_three = select_obj('sc_three')
+    sc_four = select_obj('sc_four')
+    winner = select_obj('winner')
+    loser = select_obj('loser')
     print("\n\n*** DEFENDING THE VILLAGE")
     print(f"{defender} is defending a village and farmsteads against")
     print(f"{attacker} raiding the region. {attacker} aim is to ")
@@ -297,7 +297,7 @@ def defending_the_village():
     print(" ")
     print("* Special Rules")
     print("- Detail about scenario deployment detail are in the Rulebook.")
-    print(f"- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour}")
+    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
     print(f"  place a village in {defender} corner.")
     print(f"- After the terrains are placed, {defender} starts deploying")
     print(f"  within {defender} deployment zone.")
@@ -316,17 +316,17 @@ def defending_the_village():
 
 
 def wagon_train():
-    attacker = selectObject('attacker')
-    defender = selectObject('defender')
-    daytime = selectObject('daytime')
-    weather = selectObject('weather')
-    turns = selectObject('turns')
-    sceneryOne = selectObject('sceneryOne')
-    sceneryTwo = selectObject('sceneryTwo')
-    sceneryThree = selectObject('sceneryThree')
-    sceneryFour = selectObject('sceneryFour')
-    winner = selectObject('winner')
-    loser = selectObject('loser')
+    attacker = select_obj('attacker')
+    defender = select_obj('defender')
+    daytime = select_obj('daytime')
+    weather = select_obj('weather')
+    turns = select_obj('turns')
+    sc_one = select_obj('sc_one')
+    sc_two = select_obj('sc_two')
+    sc_three = select_obj('sc_three')
+    sc_four = select_obj('sc_four')
+    winner = select_obj('winner')
+    loser = select_obj('loser')
     print("\n\n*** WAGON TRAIN (Scenario Tournament - 2000 Army Points)")
     print("A supply wagon train escorted by a patrol force is ambushed")
     print(f"by {attacker}. {defender} task is to protect and get")
@@ -336,7 +336,7 @@ def wagon_train():
     print(" ")
     print("* Special Rules")
     print("- Detail about scenario deployment detail are in the Rulebook.")
-    print(f"- After {sceneryOne}, {sceneryTwo}, {sceneryThree}, {sceneryFour}")
+    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
     print(f"  add road in the middle of the table. {defender} place 6 wagons")
     print("  on the road. No wagon is more than halfway across the table.")
     print(f"- After the objective are placed, {defender} starts deploying")
