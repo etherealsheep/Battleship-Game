@@ -60,7 +60,6 @@ objects = {
 
 
 def banner():
-    # Initial Banner.
     print("            ██╗    ██╗ █████╗ ██████╗")
     print("            ██║    ██║██╔══██╗██╔══██╗")
     print("            ██║ █╗ ██║███████║██████╔╝")
@@ -136,7 +135,6 @@ def main():
         print("Make your choice: (1, 2, 3, 4):")
         choice = input()
         print("o()xxxx[{::::::::::::::::::::::::::::::::::> \n")
-        # Calls a story function based on choices
         if choice == "1":
             take_and_hold()
         elif choice == "2":
@@ -146,7 +144,6 @@ def main():
         elif choice == "4":
             wagon_train()
         elif choice == "5":
-            # Breaks the loop to exit game on entering 5
             print("\n\n See you Commander.")
             print("\n press : Press the button RUN PROGRAM to run again.")
             print(" ")
@@ -207,6 +204,7 @@ def take_and_hold():
     print("- 1 VP for holding objective in your deployment zone")
     print("- 2 VP for holding objective in central deployment zone")
     print("- 3 VP for holding objective in the opponent deployment zone")
+    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
     time.sleep(10)
 
 
@@ -242,6 +240,7 @@ def battle_for_the_tower():
     print("- 1 VP extra if there is no enemy unit within 10cm of the tower.")
     print("- 1 VP extra if there is no enemy unit within 20cm of the tower.")
     print("       This bonus stacks with the pravious one.")
+    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
     time.sleep(10)
 
 
@@ -277,6 +276,7 @@ def defending_the_village():
     print("- 2 VP for {attacker} for every burnt building.")
     print("- 1 VP for {defender} for every burnt building.")
     print("- 3 VP for {attacker} for burning the village.")
+    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
     time.sleep(10)
 
 
@@ -312,6 +312,7 @@ def wagon_train():
     print("- 1 VP for {attacker} for every wagon destroyed in melee.")
     print("- 3 VP for {attacker} for every wagon destroyed and looted.")
     print("- 1 VP for {defender} for every wagon non destroyed.")
+    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
     time.sleep(10)
 
 
