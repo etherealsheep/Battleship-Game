@@ -55,27 +55,7 @@ objects = {
             'hill',
             'wood',
             'river'
-        ],
-        'sc_five': [
-            'fortified wall',
-            'castle'
-        ],
-        'winner': [
-            'The Empire',
-            'High Elf Army',
-            'Dwarf Army',
-            'Undead Horde',
-            'Chaos Army',
-            'Orc Horde'
-        ],
-        'loser': [
-            'The Empire',
-            'High Elf Army',
-            'Dwarf Army',
-            'Undead Horde',
-            'Chaos Army',
-            'Orc Horde'
-        ],
+        ]
 }
 
 
@@ -118,7 +98,6 @@ def select_obj(key):
     # initialize selection in -1 (no selection)
     selection = -1
     # set validInput initial value to False
-    # this variable controls the input validation
     validInput = False
     # "item" is the final value selected from the user menu
     item = None
@@ -206,9 +185,6 @@ def take_and_hold():
     sc_two = select_obj('sc_two')
     sc_three = select_obj('sc_three')
     sc_four = select_obj('sc_four')
-    sc_five = select_obj('sc_five')
-    winner = select_obj('winner')
-    loser = select_obj('loser')
     print("\n\n*** TAKE AND HOLD")
     print("The aim of this scenario is to fight over some objectives rather")
     print("than just breaking your opponent.")
@@ -217,8 +193,8 @@ def take_and_hold():
     print(" ")
     print("* Special Rules")
     print("- Set up terrain and objectives: refer the drawing on the Ruleset.")
-    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
-    print(f"  and {sc_five} are set on the battlefield, players take turn")
+    print(f"- After {sc_one}, {sc_two}, {sc_three} and {sc_four}")
+    print("  are set on the battlefield, players take turn")
     print(f"  starting from {attacker}, in placing four game objectives.")
     print(f"- After the objective are placed, {defender} starts deploying")
     print(f"  within {defender} deployment zone.")
@@ -231,8 +207,6 @@ def take_and_hold():
     print("- 1 VP for holding objective in your deployment zone")
     print("- 2 VP for holding objective in central deployment zone")
     print("- 3 VP for holding objective in the opponent deployment zone")
-    print(" ")
-    print(f"WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
 
 
@@ -246,9 +220,6 @@ def battle_for_the_tower():
     sc_two = select_obj('sc_two')
     sc_three = select_obj('sc_three')
     sc_four = select_obj('sc_four')
-    sc_five = select_obj('sc_five')
-    winner = select_obj('winner')
-    loser = select_obj('loser')
     print("\n\n*** BATTLE FOR THE TOWER")
     print("This scenario featurea a bloody struggle for a tower positioned")
     print("in the middle of the battlefield.")
@@ -257,8 +228,8 @@ def battle_for_the_tower():
     print(" ")
     print("* Special Rules")
     print("- Set up terrain and objectives: refer the drawing on the Ruleset.")
-    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four}")
-    print(f"  {sc_five}, place a tower right in the middle of the table.")
+    print(f"- After {sc_one}, {sc_two}, {sc_three}, {sc_four},")
+    print("  place a tower right in the middle of the table.")
     print(f"- After the terrains are placed, {defender} starts deploying")
     print(f"  within {defender} deployment zone.")
     print(f"- This game has a number of turns equal to {turns}.")
@@ -271,8 +242,6 @@ def battle_for_the_tower():
     print("- 1 VP extra if there is no enemy unit within 10cm of the tower.")
     print("- 1 VP extra if there is no enemy unit within 20cm of the tower.")
     print("       This bonus stacks with the pravious one.")
-    print(" ")
-    print(f"WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
 
 
@@ -286,8 +255,6 @@ def defending_the_village():
     sc_two = select_obj('sc_two')
     sc_three = select_obj('sc_three')
     sc_four = select_obj('sc_four')
-    winner = select_obj('winner')
-    loser = select_obj('loser')
     print("\n\n*** DEFENDING THE VILLAGE")
     print(f"{defender} is defending a village and farmsteads against")
     print(f"{attacker} raiding the region. {attacker} aim is to ")
@@ -310,8 +277,6 @@ def defending_the_village():
     print("- 2 VP for {attacker} for every burnt building.")
     print("- 1 VP for {defender} for every burnt building.")
     print("- 3 VP for {attacker} for burning the village.")
-    print(" ")
-    print(f"WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
 
 
@@ -325,8 +290,6 @@ def wagon_train():
     sc_two = select_obj('sc_two')
     sc_three = select_obj('sc_three')
     sc_four = select_obj('sc_four')
-    winner = select_obj('winner')
-    loser = select_obj('loser')
     print("\n\n*** WAGON TRAIN (Scenario Tournament - 2000 Army Points)")
     print("A supply wagon train escorted by a patrol force is ambushed")
     print(f"by {attacker}. {defender} task is to protect and get")
@@ -349,8 +312,6 @@ def wagon_train():
     print("- 1 VP for {attacker} for every wagon destroyed in melee.")
     print("- 3 VP for {attacker} for every wagon destroyed and looted.")
     print("- 1 VP for {defender} for every wagon non destroyed.")
-    print(" ")
-    print(f"WIN: {winner}      LOSE: {loser}")
     time.sleep(10)
 
 
