@@ -204,7 +204,8 @@ def take_and_hold():
     print("- 1 VP for holding objective in your deployment zone")
     print("- 2 VP for holding objective in central deployment zone")
     print("- 3 VP for holding objective in the opponent deployment zone")
-    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
+    print(" ")
+    print("o()xxxx[{::::::::::::::::::::::::::::::::::>")
     time.sleep(10)
 
 
@@ -240,7 +241,8 @@ def battle_for_the_tower():
     print("- 1 VP extra if there is no enemy unit within 10cm of the tower.")
     print("- 1 VP extra if there is no enemy unit within 20cm of the tower.")
     print("       This bonus stacks with the pravious one.")
-    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
+    print(" ")
+    print("o()xxxx[{::::::::::::::::::::::::::::::::::>")
     time.sleep(10)
 
 
@@ -276,7 +278,8 @@ def defending_the_village():
     print("- 2 VP for {attacker} for every burnt building.")
     print("- 1 VP for {defender} for every burnt building.")
     print("- 3 VP for {attacker} for burning the village.")
-    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
+    print(" ")
+    print("o()xxxx[{::::::::::::::::::::::::::::::::::>")
     time.sleep(10)
 
 
@@ -312,7 +315,8 @@ def wagon_train():
     print("- 1 VP for {attacker} for every wagon destroyed in melee.")
     print("- 3 VP for {attacker} for every wagon destroyed and looted.")
     print("- 1 VP for {defender} for every wagon non destroyed.")
-    print("\no()xxxx[{::::::::::::::::::::::::::::::::::> \n")
+    print(" ")
+    print("o()xxxx[{::::::::::::::::::::::::::::::::::>")
     time.sleep(10)
 
 
