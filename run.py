@@ -141,8 +141,6 @@ def main():
         elif choice == "4":
             wagon_train()
         elif choice == "5":
-            print("\n\n See you Commander.")
-            print("\n press : Press the button RUN PROGRAM to run again.")
             print(" ")
             print("████████╗ ██████╗     ████████╗██╗  ██╗███████╗")
             print("╚══██╔══╝██╔═══██╗    ╚══██╔══╝██║  ██║██╔════╝")
@@ -162,6 +160,9 @@ def main():
             print("██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝")
             print("██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗██╗██╗")
             print("╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚═╝╚═╝")
+            print(" ")
+            print("\n Press RUN PROGRAM to run again WarMaster Battle Log")
+
             time.sleep(2)
             break
         else:
