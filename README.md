@@ -1,5 +1,7 @@
 # WarMaster Battle Log
 
+[View the live project here.](https://warmaster-battle-log.herokuapp.com/)
+
 ![](/images/amiresponsive.jpg)
 
 I love Warmaster (https://www.wm-revolution.com/), best wargame ever created!
