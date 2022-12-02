@@ -4,7 +4,7 @@
 
 I love Warmaster (https://www.wm-revolution.com/), best wargame ever created!
 
-For this reason I choose to create a script to keep track of the games with my group of players.
+For this reason I choose to create a script to keep track of the matches done with my group of friends.
 
 WarMaster Battle Log is a terminal based designed for my WarMaster group of players, to generate log of every battle, in this way it will be easy to keep track and record progression through the campaign.
 
