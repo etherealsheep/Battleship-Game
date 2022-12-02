@@ -125,7 +125,7 @@ Although this is a web app it is visible on a mobile and tablets, even though it
 ## **Deployment**
 
 This project was developed using Heroku, committed to git and pushed to GitHub using git commands.
-You can clone this repository [Here]()
+You can clone this repository [Here](https://github.com/etherealsheep/Warmaster-Battle-Log)
 
 To deploy this page to Heroku from GitHub repository, the following steps were taken:
 
@@ -141,5 +141,6 @@ To deploy this page to Heroku from GitHub repository, the following steps were t
 ## Credits
 
 * Working on this project everything went well and straightforward.
-* Warmaster is a game release during 2000 by Games Workshop (https://en.wikipedia.org/wiki/Warmaster).
-* Warmaster stopped being officially supported by Games Workshop (GW) in 2013 and since then, a huge community of player keeps the game alive. 
+* Warmaster is a game release in 2000 by Games Workshop (https://en.wikipedia.org/wiki/Warmaster).
+* Warmaster stopped being officially supported by Games Workshop (GW) in 2013 and since then, a huge community of player keeps the game alive.
+* Nowadays, WarMaster is seeing the biggest numbers of players ever seen before and the community is still increasing.
