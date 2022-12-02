@@ -23,7 +23,7 @@ I wanted to create a battle log generator for fun and to remember the epic momen
 * WarMaster player
 
 
-### **The log generator will help user to:**0
+### **The log generator will help user to:**
 
 * Provide some entertainment.
 * Keep track of the played battles.
