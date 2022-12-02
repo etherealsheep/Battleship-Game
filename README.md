@@ -101,15 +101,15 @@ No graphics other graphics is intended to be used for this project.
 
 Becasue PEP8 (http://pep8online.com) was down at the time of my validation, I followed this procedure to validate my code and be sure was error-free:
 
-### 1 Type the word linter into the search bar that appears, and click on Python: Select Linter from the filtered results
+1 Type the word linter into the search bar that appears, and click on Python: Select Linter from the filtered results
 
 ![](/images/image_1.png)
 
-### 2 Select pycodestyle from the list
+2 Select pycodestyle from the list
 
 ![](/images/image_2.png)
 
-### 3 PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
+3 PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
 
 **No errors found during the validation**
 
